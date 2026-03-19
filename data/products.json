@@ -1,0 +1,68 @@
+[
+  {
+    "id": "calm-oil",
+    "sku": "ZP-OIL-001",
+    "category": "oils",
+    "name": "CALM",
+    "subtitle": "Daily Balance Oil",
+    "image": "/products/zentra-calm-oil.png",
+    "tagline": "Daily support for a balanced pet routine",
+    "thcCompliant": true,
+    "thirdPartyTested": true
+  },
+  {
+    "id": "mobility-oil",
+    "sku": "ZP-OIL-002",
+    "category": "oils",
+    "name": "MOBILITY",
+    "subtitle": "Active Comfort Oil",
+    "image": "/products/zentra-mobility-oil.png",
+    "tagline": "Designed to support everyday comfort and mobility",
+    "thcCompliant": true,
+    "thirdPartyTested": true
+  },
+  {
+    "id": "skin-oil",
+    "sku": "ZP-OIL-003",
+    "category": "oils",
+    "name": "SKIN",
+    "subtitle": "Dermal Care Oil",
+    "image": "/products/zentra-skin-oil.png",
+    "tagline": "Gentle care for skin and coat well-being",
+    "thcCompliant": true,
+    "thirdPartyTested": true
+  },
+  {
+    "id": "calm-bites",
+    "sku": "ZP-BITE-001",
+    "category": "bites",
+    "name": "CALM BITES",
+    "subtitle": null,
+    "image": "/products/zentra-skin-oil.png",
+    "tagline": "Daily support for calm and balance",
+    "thcCompliant": true,
+    "thirdPartyTested": true
+  },
+  {
+    "id": "mobility-bites",
+    "sku": "ZP-BITE-002",
+    "category": "bites",
+    "name": "MOBILITY BITES",
+    "image": "/products/zentra-skin-oil.png",
+    "subtitle": null,
+    "tagline": "Support for an active and comfortable lifestyle",
+    "thcCompliant": true,
+    "thirdPartyTested": true
+  },
+  {
+    "id": "daily-bites",
+    "sku": "ZP-BITE-003",
+    "category": "bites",
+    "name": "DAILY BITES",
+    "subtitle": null,
+    "image": "/products/zentra-skin-oil.png",
+    "tagline": "Simple daily support for everyday well-being",
+    "thcCompliant": true,
+    "thirdPartyTested": true
+  }
+]
