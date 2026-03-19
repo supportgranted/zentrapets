@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
-const stagger = {
+const stagger: any = {
   hidden: {},
   show: { transition: { staggerChildren: 0.13, delayChildren: 0.2 } },
 };
-const fadeUp = {
+const fadeUp: any = {
   hidden: { opacity: 0, y: 32 },
   show: {
     opacity: 1,
