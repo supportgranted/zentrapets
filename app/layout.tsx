@@ -71,10 +71,6 @@ export const metadata: Metadata = {
       "Reliable cannabinoid-based solutions designed for modern pet brands.",
     images: ["/og-image.png"],
   },
-
-  alternates: {
-    canonical: "https://zentrapets.com",
-  },
 };
 
 export const viewport: Viewport = {
