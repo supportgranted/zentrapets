@@ -8,7 +8,10 @@
     "image": "/products/zentra-calm-oil.png",
     "tagline": "Daily support for a balanced pet routine",
     "thcCompliant": true,
-    "thirdPartyTested": true
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 2,
+    "tag": "bestseller"
   },
   {
     "id": "mobility-oil",
@@ -19,7 +22,10 @@
     "image": "/products/zentra-mobility-oil.png",
     "tagline": "Designed to support everyday comfort and mobility",
     "thcCompliant": true,
-    "thirdPartyTested": true
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 1,
+    "tag": ""
   },
   {
     "id": "skin-oil",
@@ -30,7 +36,10 @@
     "image": "/products/zentra-skin-oil.png",
     "tagline": "Gentle care for skin and coat well-being",
     "thcCompliant": true,
-    "thirdPartyTested": true
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 3,
+    "tag": ""
   },
   {
     "id": "calm-bites",
@@ -41,7 +50,10 @@
     "image": "/products/zentra-skin-oil.png",
     "tagline": "Daily support for calm and balance",
     "thcCompliant": true,
-    "thirdPartyTested": true
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 5,
+    "tag": "bestseller"
   },
   {
     "id": "mobility-bites",
@@ -52,7 +64,10 @@
     "subtitle": null,
     "tagline": "Support for an active and comfortable lifestyle",
     "thcCompliant": true,
-    "thirdPartyTested": true
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 4,
+    "tag": "bestseller"
   },
   {
     "id": "daily-bites",
@@ -63,6 +78,9 @@
     "image": "/products/zentra-skin-oil.png",
     "tagline": "Simple daily support for everyday well-being",
     "thcCompliant": true,
-    "thirdPartyTested": true
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 6,
+    "tag": ""
   }
 ]

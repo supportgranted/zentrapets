@@ -5,7 +5,10 @@ import { motion, useInView } from "framer-motion";
 import productsData from "@/data/products.json";
 import ProductCard, { type Product } from "./ProductCard";
 
-const products = productsData as Product[];
+const products = (productsData as Product[])
+  .filter((p) => p.active)
+  .sort((a, b) => a.order - b.order);
+
 const oils = products.filter((p) => p.category === "oils");
 const bites = products.filter((p) => p.category === "bites");
 

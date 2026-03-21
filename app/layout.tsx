@@ -10,7 +10,13 @@ export const metadata: Metadata = {
   },
   description:
     "Reliable cannabinoid-based solutions designed for modern pet brands. Positioned for retail-ready integration. A brand by Heliora Group LLC, USA.",
-
+  category: "Pet Wellness",
+  classification: "B2B Pet Products",
+  alternates: { canonical: "https://zentrapets.com" },
+  other: {
+    "geo.region": "US",
+    "geo.placename": "United States",
+  },
   keywords: [
     "ZENTRA pets",
     "CBD pet wellness",

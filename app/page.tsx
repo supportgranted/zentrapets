@@ -6,11 +6,13 @@ import CentralMessage from "@/components/CentralMessage";
 import B2B from "@/components/B2B";
 import Transparency from "@/components/Transparency";
 import Footer from "@/components/Footer";
+import DossierTab from "@/components/DossierTab";
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
+      <DossierTab />
       <main>
         <Hero />
         <TrustBlock />

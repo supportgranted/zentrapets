@@ -12,6 +12,9 @@ export interface Product {
   thcCompliant: boolean;
   thirdPartyTested: boolean;
   image?: string | null;
+  active: boolean;
+  order: number;
+  tag: string | null;
 }
 interface Props {
   product: Product;
