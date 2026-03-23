@@ -99,14 +99,14 @@ export default function Transparency() {
                 className="bg-transparent rounded-(--radius-xl) border border-ink/8 p-8 backdrop-blur"
               >
                 <div className="flex items-center justify-between mb-6">
-                  <span className="icon-wrap w-11 h-11 bg-[rgba(122,158,126,0.15)]">
+                  <span className="icon-wrap w-18 h-18 bg-[rgba(122,158,126,0.15)]">
                     <Icon
-                      size={20}
-                      color="var(--color-primary-light)"
+                      size={32}
+                      color="var(--color-primary-dark)"
                       strokeWidth={1.75}
                     />
                   </span>
-                  <span className="font-bold text-[0.6875rem] tracking-widest text-gold opacity-70">
+                  <span className="font-bold text-[2rem] tracking-widest text-gold opacity-70">
                     {p.num}
                   </span>
                 </div>

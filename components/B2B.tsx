@@ -98,10 +98,10 @@ export default function B2B() {
                   className={`flex items-start gap-4 px-7 py-6 ${i < features.length - 1 ? "border-b border-border" : ""} ${i % 2 === 0 ? "bg-white" : ""}`}
                 >
                   <span
-                    className={`icon-wrap w-10 h-10 shrink-0 ${i % 2 === 0 ? "icon-wrap-primary" : "icon-wrap-gold"}`}
+                    className={`icon-wrap w-16 h-16 shrink-0 ${i % 2 === 0 ? "icon-wrap-primary" : "icon-wrap-gold"}`}
                   >
                     <Icon
-                      size={16}
+                      size={32}
                       color={
                         i % 2 === 0
                           ? "var(--color-primary-dark)"

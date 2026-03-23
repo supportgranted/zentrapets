@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import GoogleTranslate from "@/components/GoogleTranslate";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zentrapets.com"),
@@ -126,7 +127,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <GoogleTranslate />
+      </body>
     </html>
   );
 }

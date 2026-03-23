@@ -1,18 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #7a9e7e;
-    --color-primary-light: #c5d9c7;
-    --color-primary-dark: #557a59;
+    --color-primary: #6f9473;
+    --color-primary-dark: #4e6f52;
+    --color-primary-light: #bcd2bf;
     --color-primary-subtle: #f2f6f2;
 
     --color-gold: #c9a96e;
     --color-gold-light: #ebd9b8;
     --color-gold-subtle: #fbf7f0;
-
-    --color-ink: #1a1a18;
-    --color-ink-muted: #5a5a55;
-    --color-ink-light: #9a9a94;
+    --color-ink: #000000;
+    --color-ink-muted: #1f1f1f;
+    --color-ink-light: #3a3a3a;
     --color-border: #e8e8e3;
     --color-surface: #fafaf8;
 
@@ -226,7 +225,7 @@ body {
 
     border-radius: var(--radius-full);
     font-weight: 600;
-    font-size: 0.6875rem;
+    font-size: 0.8rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-primary-dark);
@@ -325,4 +324,26 @@ body {
 ::-webkit-scrollbar-thumb {
     background: var(--color-primary-light);
     border-radius: 99px;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+iframe.skiptranslate {
+    height: 0px !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    border: none !important;
+    opacity: 0 !important;
+    display: none;
+    font-size: smaller;
+}
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+    display: none !important;
 }

@@ -15,10 +15,10 @@ export default function DossierTab() {
       whileHover={{ x: 0 }}
       whileTap={{ x: 0 }}
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
-      className="fixed right-0 bottom-0 -translate-y-1/2 z-50"
+      className="fixed right-0 bottom-40 -translate-y-1/2 z-50"
     >
       <div
-        className="flex flex-col items-start justify-center pl-2  bg-[var(--color-primary)] text-white"
+        className="flex flex-col items-start justify-center pl-2  bg-primary text-white"
         style={{
           width: "80px",
           height: "200px",

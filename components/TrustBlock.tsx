@@ -47,9 +47,9 @@ export default function TrustBlock() {
                 transition={{ duration: 0.5, delay: i * 0.09 }}
                 className="bg-white p-8 flex flex-col gap-4"
               >
-                <span className="icon-wrap icon-wrap-primary w-10 h-10">
+                <span className="icon-wrap icon-wrap-primary w-20 h-20">
                   <Icon
-                    size={18}
+                    size={32}
                     color="var(--color-primary-dark)"
                     strokeWidth={1.75}
                   />
