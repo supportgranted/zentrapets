@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustBlock from "@/components/TrustBlock";
 import Products from "@/components/Products";
@@ -7,11 +6,11 @@ import B2B from "@/components/B2B";
 import Transparency from "@/components/Transparency";
 import Footer from "@/components/Footer";
 import DossierTab from "@/components/DossierTab";
+import ContactForm from "@/components/ContactForm";
 
 export default function HomePage() {
   return (
     <>
-      <Navbar />
       <DossierTab />
       <main>
         <Hero />
@@ -19,6 +18,7 @@ export default function HomePage() {
         <Products />
         <CentralMessage />
         <B2B />
+        <ContactForm />
         <Transparency />
       </main>
       <Footer />

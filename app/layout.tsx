@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import GoogleTranslate from "@/components/GoogleTranslate";
+import CookieBanner from "@/components/CookieBanner";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zentrapets.com"),
@@ -128,7 +130,9 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <Navbar />
         {children}
+        <CookieBanner />
         <GoogleTranslate />
       </body>
     </html>

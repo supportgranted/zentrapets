@@ -1,5 +1,6 @@
 "use client";
 import { Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -56,9 +57,12 @@ export default function Footer() {
           <span className="font-normal text-[0.6875rem] text-white">
             © {new Date().getFullYear()} Heliora Group LLC. All rights reserved.
           </span>
-          <span className="font-normal text-[0.6875rem] text-white">
-            Pet Wellness, Simplified
-          </span>
+          <Link
+            href="/legal/privacy"
+            className="font-normal text-[0.8rem] text-white underline hover:text-white/60 transition-colors no-underline"
+          >
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

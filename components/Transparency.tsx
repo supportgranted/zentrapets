@@ -39,7 +39,7 @@ export default function Transparency() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="bg-white py-20 relative overflow-hidden">
+    <section className="bg-white py-20 relative">
       <div className="container relative z-10 bg-white" ref={ref}>
         <div className="b2b-grid items-start mb-16">
           {/* Left */}

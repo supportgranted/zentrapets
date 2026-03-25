@@ -41,7 +41,7 @@ const FloatingTranslateButton = () => {
     <div
       style={{
         position: "fixed",
-        bottom: "10px",
+        bottom: "80px",
         right: "10px",
         zIndex: 9999,
         display: "flex",

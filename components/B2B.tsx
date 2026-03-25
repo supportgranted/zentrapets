@@ -122,7 +122,6 @@ export default function B2B() {
             className="flex flex-col gap-4"
           >
             <div className="bg-[var(--color-ink)] rounded-[var(--radius-xl)] px-6 py-10 flex items-center gap-6 mb-2">
-              <img src="/images/logo.png" alt="" className="w-12 h-12" />
               <div>
                 <div className="font-extrabold text-[1.125rem] text-white mb-1 leading-tight">
                   ZENTRA Premium Strategic Partner
