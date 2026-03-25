@@ -4,31 +4,34 @@ import { Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer
-      className="relative border-t border-white/6 pt-16 pb-10 bg-cover bg-center"
+      className="relative border-t border-white/6 pt-32 pb-10 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://images.pexels.com/photos/6291566/pexels-photo-6291566.jpeg')",
+          "url('https://images.pexels.com/photos/34315/bordeaux-mastiff-dog-animal.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-black/80"></div>
 
       <div className="relative container">
-        <div className="flex justify-between items-start flex-wrap gap-8 pb-10 mb-8 border-b border-white/7">
+        <div className="flex justify-between items-start flex-wrap gap-8 pb-10 mb-8 border-b border-white">
           <div>
             <div className="font-extrabold text-[1.5rem] tracking-[0.12em] uppercase text-white mb-1.5">
               ZENTRA
             </div>
-            <div className="font-medium text-[0.75rem] tracking-[0.08em] uppercase text-white/30">
+            <div className="font-medium text-[0.75rem] tracking-[0.08em] uppercase text-white">
               Heliora Group LLC &nbsp;·&nbsp; USA
             </div>
+            <p className="font-normal text-[0.875rem] text-white/90 leading-relaxed m-0">
+              7901 4TH ST N STE 300 ST. PETERSBURG, FL. US 33702
+            </p>
           </div>
 
           <div className="flex flex-col gap-2 items-end">
-            <span className="font-bold text-[0.5625rem] tracking-[0.22em] uppercase text-white/25">
+            <span className="font-bold text-[0.5625rem] tracking-[0.22em] uppercase text-white">
               Trade Enquiries
             </span>
             <a
-              href="mailto:info@zentrapets.com"
+              href="mailto:hello@zentrapets.com"
               className="inline-flex items-center gap-2 font-semibold text-[0.9375rem] no-underline transition-colors duration-200"
               style={{ color: "var(--color-gold)" }}
               onMouseEnter={(e) =>
@@ -40,20 +43,20 @@ export default function Footer() {
               }
             >
               <Mail size={15} strokeWidth={2} />
-              info@zentrapets.com
+              hello@zentrapets.com
             </a>
           </div>
         </div>
-        <p className="font-normal text-[0.6875rem] leading-relaxed tracking-[0.02em] text-white/25 max-w-170 mb-6">
+        <p className="font-normal text-[0.6875rem] leading-relaxed tracking-[0.02em] text-white max-w-170 mb-6">
           These products are not intended to diagnose, treat, cure, or prevent
           any disease.
         </p>
 
         <div className="flex justify-between flex-wrap gap-3">
-          <span className="font-normal text-[0.6875rem] text-white/18">
+          <span className="font-normal text-[0.6875rem] text-white">
             © {new Date().getFullYear()} Heliora Group LLC. All rights reserved.
           </span>
-          <span className="font-normal text-[0.6875rem] text-white/18">
+          <span className="font-normal text-[0.6875rem] text-white">
             Pet Wellness, Simplified
           </span>
         </div>

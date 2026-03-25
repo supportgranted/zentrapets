@@ -8,7 +8,7 @@ export default function DossierTab() {
 
   return (
     <motion.a
-      href="/zentra-dossier.pdf"
+      href="/docs/zentra-dossier-en.pdf"
       download
       initial={{ x: HIDDEN_OFFSET }}
       animate={{ x: HIDDEN_OFFSET - TAB_WIDTH }}
@@ -32,7 +32,7 @@ export default function DossierTab() {
           className="text-xs font-extrabold tracking-widest uppercase"
           style={{
             writingMode: "vertical-rl",
-            transform: "rotate(360deg)", // 👈 para que se lea bien de abajo hacia arriba
+            transform: "rotate(360deg)",
           }}
         >
           Download Dossier

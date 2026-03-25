@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "Reliable cannabinoid-based solutions designed for modern pet brands. B2B | Private Label | Bulk Supply.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: "ZENTRA Pets — Pet Wellness by Heliora Group LLC",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "ZENTRA Pets — Pet Wellness, Simplified",
     description:
       "Reliable cannabinoid-based solutions designed for modern pet brands.",
-    images: ["/og-image.png"],
+    images: ["/images/logo.png"],
   },
 };
 
