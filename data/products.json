@@ -59,7 +59,7 @@
     "id": "full-oil",
     "sku": "ZP-OIL-005",
     "category": "oils",
-    "name": "FULL",
+    "name": "FULL SPECTRUM",
     "subtitle": "Broadening the CBD range",
     "image": "/products/zentra-full-oil.png",
     "tagline": "A must-have for comprehensive CBD category coverage",
@@ -67,6 +67,34 @@
     "thirdPartyTested": true,
     "active": true,
     "order": 5,
+    "tag": ""
+  },
+  {
+    "id": "calm-bites",
+    "sku": "ZP-BITES-001",
+    "category": "bites",
+    "name": "CALM BITES",
+    "subtitle": "Premium functional soft bites for dogs",
+    "image": "/products/zentra-calm-bites.jpeg",
+    "tagline": "Supports calm behavior and daily emotional balance with a highly palatable CBD formula.",
+    "thcCompliant": true,
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 6,
+    "tag": "bestseller"
+  },
+  {
+    "id": "mobility-bites",
+    "sku": "ZP-BITES-002",
+    "category": "bites",
+    "name": "MOBILITY BITES",
+    "subtitle": "Premium functional soft bites for dogs",
+    "image": "/products/zentra-mobility-bites.jpeg",
+    "tagline": "Supports natural movement and joint comfort with a highly palatable daily CBD formula.",
+    "thcCompliant": true,
+    "thirdPartyTested": true,
+    "active": true,
+    "order": 7,
     "tag": ""
   }
 ]

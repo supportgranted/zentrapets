@@ -56,7 +56,10 @@ function Ticker() {
       >
         {tickerWords.map((word, i) => (
           <span key={i} className="flex items-center gap-12">
-            <span className="font-extrabold text-[0.625rem] tracking-[0.35em] text-[var(--color-ink-light)]">
+            <span
+              translate="no"
+              className="font-extrabold text-[0.625rem] tracking-[0.35em] text-[var(--color-ink-light)]"
+            >
               {word}
             </span>
             <span className="text-[var(--color-gold)] text-[0.5rem]">✦</span>
@@ -73,6 +76,7 @@ export default function Hero() {
       {/* Giant background word */}
       <div
         aria-hidden
+        translate="no"
         className="absolute left-1/2 top-1/2 font-serif -translate-x-1/2 text-primary/5 -translate-y-1/2 pointer-events-none select-none font-extrabold text-[350px] leading-none tracking-widest whitespace-nowrap z-0"
       >
         ZENTRA
@@ -116,8 +120,12 @@ export default function Hero() {
             variants={fadeUp}
             className="text-hero font-extrabold tracking-[-0.02em] text-[var(--color-ink)] m-0 mb-[0.1em] leading-[1.05]"
           >
-            <span className="font-serif text-gold">ZENTRA</span>{" "}
-            <span className="relative inline-block">Pet</span>{" "}
+            <span translate="no" className="font-serif text-gold">
+              ZENTRA
+            </span>{" "}
+            <span translate="no" className="relative inline-block">
+              Pet
+            </span>{" "}
             <span className="text-[var(--color-primary)]">Wellness,</span>
             <br />
             Simplified

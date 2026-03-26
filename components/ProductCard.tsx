@@ -33,13 +33,14 @@ export default function ProductCard({ product, index, onClick }: Props) {
       onClick={onClick}
       whileHover={{ y: -6, boxShadow: "var(--shadow-lg)" }}
       transition={{ type: "spring", stiffness: 300, damping: 24 }}
-      className="card flex flex-col cursor-pointer"
+      className="card flex flex-col h-full cursor-pointer"
     >
       {/* Image area */}
-      <div
-        className={`product-img-area relative  ${isOil ? "aspect-[4/5]" : "aspect-[5/4]"}`}
-      >
-        <span className="absolute top-4 left-4 z-10 bg-white/85 backdrop-blur border border-[var(--color-border)] rounded-full px-3 py-1 font-bold text-[0.5625rem] tracking-[0.18em] uppercase text-[var(--color-ink-muted)]">
+      <div className="product-img-area relative aspect-[4/5]">
+        <span
+          translate="no"
+          className="absolute top-4 left-4 z-10 bg-white/85 backdrop-blur border border-[var(--color-border)] rounded-full px-3 py-1 font-bold text-[0.5625rem] tracking-[0.18em] uppercase text-[var(--color-ink-muted)] notranslate"
+        >
           {isOil ? "Oil" : "Bites"}
         </span>
 
@@ -57,6 +58,7 @@ export default function ProductCard({ product, index, onClick }: Props) {
               className="absolute inset-6 rounded-[var(--radius-lg)] border-2 border-dashed opacity-25"
               style={{ borderColor: accent }}
             />
+
             {isOil ? (
               <svg
                 width="56"
@@ -91,23 +93,6 @@ export default function ProductCard({ product, index, onClick }: Props) {
                   strokeWidth="1.25"
                   strokeOpacity="0.35"
                 />
-                <ellipse
-                  cx="28"
-                  cy="50"
-                  rx="11"
-                  ry="14"
-                  fill={accent}
-                  opacity="0.07"
-                />
-                <line
-                  x1="17"
-                  y1="57"
-                  x2="39"
-                  y2="57"
-                  stroke={accent}
-                  strokeWidth="0.75"
-                  strokeOpacity="0.25"
-                />
               </svg>
             ) : (
               <svg
@@ -125,33 +110,6 @@ export default function ProductCard({ product, index, onClick }: Props) {
                   rx="8"
                   fill={accent}
                   opacity="0.15"
-                  stroke={accent}
-                  strokeWidth="1.25"
-                  strokeOpacity="0.3"
-                />
-                <rect
-                  x="43"
-                  y="6"
-                  width="27"
-                  height="27"
-                  rx="8"
-                  fill={accent}
-                  opacity="0.10"
-                  stroke={accent}
-                  strokeWidth="1.25"
-                  strokeOpacity="0.3"
-                />
-                <rect
-                  x="6"
-                  y="43"
-                  width="27"
-                  height="27"
-                  rx="8"
-                  fill={accent}
-                  opacity="0.10"
-                  stroke={accent}
-                  strokeWidth="1.25"
-                  strokeOpacity="0.3"
                 />
                 <rect
                   x="43"
@@ -161,14 +119,10 @@ export default function ProductCard({ product, index, onClick }: Props) {
                   rx="8"
                   fill={accent}
                   opacity="0.15"
-                  stroke={accent}
-                  strokeWidth="1.25"
-                  strokeOpacity="0.3"
                 />
-                <circle cx="19" cy="19" r="4" fill={accent} opacity="0.25" />
-                <circle cx="57" cy="57" r="4" fill={accent} opacity="0.25" />
               </svg>
             )}
+
             <span
               className="relative z-10 font-bold text-[0.5rem] tracking-[0.28em] uppercase opacity-30"
               style={{ color: accent }}
@@ -180,26 +134,38 @@ export default function ProductCard({ product, index, onClick }: Props) {
       </div>
 
       {/* Info */}
-      <div className="p-6 flex flex-col gap-1.5 flex-1">
-        <h3 className="font-extrabold text-[1.125rem] tracking-[-0.01em] text-[var(--color-ink)] m-0">
-          {product.name}
-        </h3>
-        {product.subtitle && (
-          <p className="font-semibold text-[0.6875rem] tracking-[0.1em] uppercase text-[var(--color-primary-dark)] m-0">
-            {product.subtitle}
+      <div className="p-6 flex flex-col flex-1">
+        {/* TOP CONTENT */}
+        <div>
+          <h3
+            translate="no"
+            className="font-extrabold text-[1.125rem] tracking-[-0.01em] text-[var(--color-ink)] m-0 line-clamp-1"
+          >
+            {product.name}
+          </h3>
+
+          {product.subtitle && (
+            <p className="font-semibold text-[0.6875rem] tracking-[0.1em] uppercase text-[var(--color-primary-dark)] m-0 line-clamp-1">
+              {product.subtitle}
+            </p>
+          )}
+
+          <span className="divider divider-sm divider-gold my-2 block" />
+
+          <p className="font-normal text-[0.875rem] text-[var(--color-ink-muted)] leading-relaxed m-0 line-clamp-2">
+            {product.tagline}
           </p>
-        )}
-        <span className="divider divider-sm divider-gold my-2 block" />
-        <p className="font-normal text-[0.875rem] text-[var(--color-ink-muted)] leading-relaxed m-0 flex-1">
-          {product.tagline}
-        </p>
-        <div className="flex gap-2 flex-wrap mt-5">
+        </div>
+
+        {/* BOTTOM (SIEMPRE ALINEADO) */}
+        <div className="flex gap-2 flex-wrap mt-5 mt-auto">
           {product.thirdPartyTested && (
             <span className="badge badge-primary">
               <span className="badge-dot" />
               Tested
             </span>
           )}
+
           {product.thcCompliant && (
             <span className="badge badge-gold">
               <span className="badge-dot" />

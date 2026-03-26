@@ -23,7 +23,10 @@ function SectionLabel({
   return (
     <div className="flex items-center gap-4 mb-8">
       <span className={`divider divider-sm block ${colorClass}`} />
-      <span className="font-bold text-[0.6875rem] tracking-[0.2em] uppercase text-[var(--color-ink-light)]">
+      <span
+        translate="no"
+        className="font-bold text-[0.6875rem] tracking-[0.2em] uppercase text-[var(--color-ink-light)]"
+      >
         {label}
       </span>
       <span className="flex-1 block h-px bg-[var(--color-border)]" />
@@ -92,6 +95,15 @@ export default function Products() {
         <div className="mb-16">
           <ProductGrid items={oils} delay={0.2} onSelect={setSelected} />
         </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+        >
+          <SectionLabel colorClass="divider-gold" label="Bites" />
+        </motion.div>
+        <ProductGrid items={bites} onSelect={setSelected} />
       </div>
 
       {/* Lightbox */}
@@ -163,12 +175,4 @@ export default function Products() {
 }
 /*
 bites
-<motion.div
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.4 }}
->
-  <SectionLabel colorClass="divider-gold" label="Bites" />
-</motion.div>
-<ProductGrid items={bites} onSelect={setSelected} />*/
+*/
